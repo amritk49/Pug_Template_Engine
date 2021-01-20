@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+    script(src="/static/index.js")
+
+block style
+    style 
+        include ../static/style.css
+
+block content
+        section#introSection
+            div WELCOME TO STRAW HAT PIRATES DANCE CREW
+            div.small EAT | SLEEP | DANCE | REPEAT
+
+        section#missionSection
+            h2 OUR MISSION
+            div.card
+                h3 DANCE PERFECTION
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/1.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+            div.card
+                h3 DANCE THE WAY YOU LIKE
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/2.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+            div.card
+                h3 EXPERT MENTORS
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/3.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+
+        section#sponsorsSection
+            h2 OUR SPONSORS
+            div#sponsors
+                img(src="/static/img/logo1.png", class="spImage")
+                img(src="/static/img/logo2.png", class="spImage")
+                img(src="/static/img/logo3.png", class="spImage")
+                img(src="/static/img/logo4.png", class="spImage")
